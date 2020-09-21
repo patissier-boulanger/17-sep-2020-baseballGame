@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        .ebord {
+            height: 162.333px;
+            width: 269.417px;
+        }
+    </style>
+    <script src="js-baseBall.js"></script>
+</head>
+<body>
+    <div id = "wrapper">
+        <div class="item" style="margin-left: 40px;">
+        <form>
+            <input class="baseBallNumber" placeholder="숫자 3자리를 입력하세요" type="number" oninput="maxNumberInput(this);"></input>
+            <button onclick="userInputNumber()" name="dynamicNumber" type="button">hit!</button>
+        </form>
+    </div>
+    <div class="item ebord">
+        <ul id = "eBord"></ul>
+    </div>
+        
+    </div>
+</body>
+</html>
